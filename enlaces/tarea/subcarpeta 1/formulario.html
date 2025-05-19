@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+  
+
+
+/* Estilo del contenedor del formulario */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Título del formulario */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los campos de entrada */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Asegurarse de que todo se vea bien en pantallas pequeñas */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+ .navbar {
+            background-color: #333;
+            overflow: hidden;
+            
+            }
+
+            h2{
+                list-style-type:upper-roman;
+                
+            }
+            
+            .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            }
+            
+            .navbar a:hover {
+            background-color: #575757;
+            }
+
+            h1 {
+          text-align: center;
+          color: #333;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f0f2f5;
+          padding: 40px;
+       
+
+        }
+
+    </style>
+</head>
+<body>
+
+ <div class="navbar">
+        <a href="../index.html">inicio</a>
+        <A href="../capitulos.html">capitulos  </A>
+        <A HREF="navegacion.html">navegacion </A>
+        <a href="formulario.html">formulario</a>
+       
+     </div> 
+
+    <div class="form-container">
+        <h1>Formulario de Contacto</h1>
+        <form action="#" method="POST" class="contact-form">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
